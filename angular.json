@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "micro-fe-ng": {
+    "micro-angular": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "ngx-build-plus:build",
           "options": {
-            "outputPath": "dist/micro-fe-ng",
+            "outputPath": "dist/micro-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "micro-fe-ng:build"
+            "browserTarget": "micro-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "micro-fe-ng:build:production"
+              "browserTarget": "micro-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "micro-fe-ng:build"
+            "browserTarget": "micro-angular:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "micro-fe-ng-e2e": {
+    "micro-angular-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "micro-fe-ng:serve"
+            "devServerTarget": "micro-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "micro-fe-ng:serve:production"
+              "devServerTarget": "micro-angular:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "micro-fe-ng"
+  "defaultProject": "micro-angular"
 }

@@ -8,7 +8,7 @@ Run `npm run start` runs site http://localhost:5001
 
 ## Development server
 
-// Need TODO
+Run `npm run watch`
 
 ## Code scaffolding
 
